@@ -1,0 +1,170 @@
+/* Selectores Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, input, button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Barra de Navegación */
+.nav-bar {
+  box-shadow: 0 0 20px 0 black;
+  background-color: #E6E6E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar img {
+  width: 100px;
+}
+
+/* Inicio de Sesión */
+.log-in {
+  margin-inline: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.log-in input {
+  height: 35px;
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  outline: 1px solid black;
+}
+
+.log-in input::placeholder {
+  color: black;
+  font-weight: 100;
+  transition: .3s;
+}
+
+.log-in input:focus {
+  &::placeholder {
+    opacity: 0;
+  }
+}
+
+.log-in button {
+  margin-top: 20px;
+  height: 45px;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  border: none;
+  color: white;
+  outline: 1px solid black;
+  background-color: black;
+  transition: .5s;
+}
+
+.log-in button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+/* Sección dinámica */
+.container {
+  margin-top: 100px;
+  margin-inline: auto;
+  padding: 10px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 15px;
+  width: 500px;
+}
+
+.container h3 {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.container div {
+  display: flex;
+  gap: 20px;
+}
+
+.container button {
+  width: 150px;
+  height: 45px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: 1px solid black;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.container button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+/* Pop-Up de Cupones */
+.coupon-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.coupon {
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 15px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.coupon h4 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.coupon h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.coupon button {
+  width: 200px;
+  height: 45px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: 1px solid black;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.coupon button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}

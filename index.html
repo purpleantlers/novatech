@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Enlace a los scripts JS -->
+    <script src="script.js" defer></script>
+
+    <title>Nova Tech</title>
+  </head>
+
+  <body>
+
+    <!-- Barra de navegación con el logo de la empresa -->
+    <nav class="nav-bar">
+      <img src="assets/logo.png" alt="Nova Tech Logo" title="Nova Tech">
+    </nav>
+
+    <!-- Formulario para inicio de sesión -->
+    <form class="log-in" id="userSession">
+      <input type="text" id="name" placeholder="Nombre" minlength="3" required />
+      <input type="password" id="password" placeholder="Contraseña" minlength="4" required />
+      <button type="submit">INICIAR SESIÓN</button>
+    </form>
+
+    <!-- Sección con la información del usuario -->
+    <section class="container" id="container"></section>
+
+  </body>
+
+</html>
